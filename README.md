@@ -1,5 +1,6 @@
 # 5GNR_modem_SDR
 This is a physical layer full simulation based on C-code from gNodeB to NR-ue.
+(All the algorithm Libs are implemented by C codes. the GUI is implemented with MFC. the release version will be upload in succession)
 
 current finished:
 1. gNB transmit DL physical channel, including PDCCH and PDSCH, PDCCH DMRS, PDSCH DMRS, SSB, CSI-RS.
@@ -16,7 +17,8 @@ next development module:
 1. NR-UE UL transmite
 2. gNB UL receive.
 
-This is a open source project, please do not use it to any commercial project.
-If you are interested, please contact with me.
+
+
+This is a open source project, please do not use it to any commercial project. 
+If you are interested and expected get all libs' source codes, please contact with me.
 my permanent email: calmet@qq.com
-weixin: calmet
