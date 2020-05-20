@@ -25,4 +25,4 @@ my permanent email: calmet@qq.com
 weixin QR code:
 ![Image](https://github.com/wirelessModem/wirelessModem.github.io/blob/master/weixin.png)
 
-Go==>[github](https://github.com/wirelessModem/wirelessModem.github.io)
+Go==>[github Repository](https://github.com/wirelessModem/wirelessModem.github.io)
