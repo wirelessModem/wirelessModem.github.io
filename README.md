@@ -22,4 +22,5 @@ next development module:
 This is a open source project, please do not use it to any commercial project. 
 If you are interested and expected get all libs' source codes, please contact with me.
 my permanent email: calmet@qq.com
+weixin QR code:
 ![Image](https://github.com/wirelessModem/5GNR_modem_SDR/blob/master/weixin.png)
