@@ -1,2 +1,22 @@
 # 5GNR_modem_SDR
 This is a physical layer full simulation based on C-code from gNodeB to NR-ue.
+
+current finished:
+1. gNB transmit DL physical channel, including PDCCH and PDSCH, PDCCH DMRS, PDSCH DMRS, SSB, CSI-RS.
+2. NR-UE receive the DL physical channel, including SSB/PDCCH/PDSCH and corresponding DMRS. 
+3. UE Channel estimation, EQualization, Demodulation and Decode.
+......
+finished sub-function:
+1. polar encoding, LPDC encoding
+2. polar decoding, LPDC decoding
+3. channel interleaving, modulation, demodulation
+.....
+
+next development module:
+1. NR-UE UL transmite
+2. gNB UL receive.
+
+This is a open source project, please do not use it to any commercial project.
+If you are interested, please contact with me.
+my permanent email: calmet@qq.com
+weixin: calmet
