@@ -231,6 +231,7 @@
     <ClInclude Include="BwpCarrierCfgDlg.h" />
     <ClInclude Include="CoresetSSCfgDlg.h" />
     <ClInclude Include="gNbIntf.h" />
+    <ClInclude Include="nrBasicIntf.h" />
     <ClInclude Include="NRsystem_GUI.h" />
     <ClInclude Include="NRsystem_GUIDlg.h" />
     <ClInclude Include="nrUeIntf.h" />

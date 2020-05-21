@@ -10,6 +10,7 @@
 // includes Nr system libs' header files
 #include "gNbIntf.h"
 #include "nrUeIntf.h"
+#include "nrBasicIntf.h"
 
 
 #ifdef _DEBUG
@@ -223,6 +224,13 @@ void CNRsystem_GUIDlg::OnBnClickedgNbTx()
 void CNRsystem_GUIDlg::OnBnClickedNrUeRx()
 {
     nrUeRxMain();
+	//getTraceInfoPtr();
+	int num=MultiByteToWideChar(0,0,getTraceInfoPtr(),-1,NULL,0);
+	//CString str("NR system bring up!!!!");
+	wchar_t *wide=new wchar_t[num];
+	MultiByteToWideChar(0,0,getTraceInfoPtr(),-1,wide,num);
+    m_NrStatusTxt.SetWindowText(wide);
+	
 }
 
 

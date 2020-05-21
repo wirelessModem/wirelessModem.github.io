@@ -1,6 +1,6 @@
 /*
 gNB PHY simulation system.
-initial Created by tangqy(2020.5.19)
+initial Created： 2020.5.19
 
 file name gNbIntf.h
 
@@ -10,14 +10,7 @@ file name gNbIntf.h
 #define __G_NB_INTF_H__
 
 
-#ifndef __outVarName__
-#define __outVarName__
 
-#define varName(x) #x
-#define printExp(exp) cout<<#exp<<"Ϊ:\t\t"<<(exp)<<endl
-#define printExpToString(exp) cout<<(string(#exp)+"Ϊ:\t\t")<<(exp).toString()<<endl
-
-#endif
 
 #ifdef __cplusplus
 extern "C" {
@@ -26,6 +19,10 @@ extern "C" {
 
 extern void gNbTxMain();
 extern void gNbRxMain();
+
+
+extern void saveTxDataAsFiles(char *FileName);
+
 
 extern void gNbTestMain();
 

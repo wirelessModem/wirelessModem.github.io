@@ -1,0 +1,12 @@
+﻿  stdafx.cpp
+  SsbCfgDlg.cpp
+  NRsystem_GUIDlg.cpp
+f:\5g\5gnr\nrsimulator\nrsimulator\5gnr_modem_sdr\wirelessmodem.github.io\nrsystem_gui\gnbintf.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+f:\5g\5gnr\nrsimulator\nrsimulator\5gnr_modem_sdr\wirelessmodem.github.io\nrsystem_gui\nrueintf.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+f:\5g\5gnr\nrsimulator\nrsimulator\5gnr_modem_sdr\wirelessmodem.github.io\nrsystem_gui\nrbasicintf.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+  NRsystem_GUI.cpp
+  CoresetSSCfgDlg.cpp
+  BwpCarrierCfgDlg.cpp
+  Generating Code...
+  NRsystem_GUI.vcxproj -> F:\5G\5GNR\NRsimulator\NRsimulator\5GNR_modem_SDR\wirelessModem.github.io\NRsystem_GUI\x64\NRsystem_GUI.exe
+  NRsystem_GUI.vcxproj -> F:\5G\5GNR\NRsimulator\NRsimulator\5GNR_modem_SDR\wirelessModem.github.io\NRsystem_GUI\x64\NRsystem_GUI.pdb (Partial PDB)
