@@ -17,7 +17,7 @@ next development module:
 1. NR-UE UL transmite
 2. gNB UL receive.
 
-
+The demo exe are placed in x64/win32, if you can not compile/link pass, please use the exe. 
 
 This is a open source project, please do not use it to any commercial project. 
 If you are interested and expected get all libs' source codes, please contact with me.
