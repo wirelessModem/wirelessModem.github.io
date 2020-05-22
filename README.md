@@ -23,7 +23,7 @@ The demo exe are placed in x64/win32, if you can not compile/link pass, please u
 增加将gNb的资源Grid以RB和RE两种颗粒度输出为excel文件的形式，方便debug，了解当前资源分布情况
 ![Image](https://github.com/wirelessModem/wirelessModem.github.io/blob/master/NbTxViewRBGrid.png?raw=true)
 
-//
+
 This is a open source project, please do not use it to any commercial project. 
 If you are interested and expected get all libs' source codes, please contact with me.
 my permanent email: calmet@qq.com
