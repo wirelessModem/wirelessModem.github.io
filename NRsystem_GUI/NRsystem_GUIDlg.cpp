@@ -79,6 +79,8 @@ BEGIN_MESSAGE_MAP(CNRsystem_GUIDlg, CDialogEx)
     ON_BN_CLICKED(IDC_nrUeTx, &CNRsystem_GUIDlg::OnBnClickedNrUeTx)
     ON_BN_CLICKED(IDC_gNbRx, &CNRsystem_GUIDlg::OnBnClickedgNbRx)
     ON_NOTIFY(TCN_SELCHANGE, IDC_TAB_GNB, &CNRsystem_GUIDlg::OnTcnSelchangeTabGnb)
+    ON_BN_CLICKED(IDC_NbTxView, &CNRsystem_GUIDlg::OnBnClickedNbTxView)
+    ON_BN_CLICKED(IDC_UeRxView, &CNRsystem_GUIDlg::OnBnClickedUeRxView)
 END_MESSAGE_MAP()
 
 
@@ -142,7 +144,13 @@ BOOL CNRsystem_GUIDlg::OnInitDialog()
 
     m_CurSelTab = 0;
 
-    m_ueTab.InsertItem(0, _T("UE Tx Configuration"));
+    m_ueTab.InsertItem(0, _T("UE Prach Configuration"));
+    m_nrUePrachCfg.Create(IDD_UEPRACH_DLG, &m_ueTab);
+    m_ueTab.GetClientRect(rc);
+    rc.top += 20;
+    m_nrUePrachCfg.MoveWindow(&rc);
+    m_nrUePrachCfg.ShowWindow(SW_SHOW);
+
 
     CString str("NR system bring up!!!!");
     m_NrStatusTxt.SetWindowText(str);
@@ -216,7 +224,7 @@ void CNRsystem_GUIDlg::OnBnClickedgNbTx()
 {
     //Nb Tx, gen transmission data files
     gNbTxMain();
-
+	
     //nrUeRxMain();
 }
 
@@ -224,14 +232,39 @@ void CNRsystem_GUIDlg::OnBnClickedgNbTx()
 void CNRsystem_GUIDlg::OnBnClickedNrUeRx()
 {
     nrUeRxMain();
-	//getTraceInfoPtr();
+	
+
+    //show trace info
 	int num=MultiByteToWideChar(0,0,getTraceInfoPtr(),-1,NULL,0);
-	//CString str("NR system bring up!!!!");
-	wchar_t *wide=new wchar_t[num];
+	wchar_t *wide=new wchar_t[num]; //CString str("NR system bring up!!!!");
 	MultiByteToWideChar(0,0,getTraceInfoPtr(),-1,wide,num);
     m_NrStatusTxt.SetWindowText(wide);
 	
 }
+
+
+
+void CNRsystem_GUIDlg::OnBnClickedNbTxView()
+{
+     //show GRID in excel
+     int *pGrid;
+     CexcelAccess excelAccess;
+	 pGrid=getNbGridPtr();
+
+     //m_excelAccess.initExcel();
+     //excelAccess.writeExcel_example("test11.xlsx");
+	 //excelAccess.writeExcel_example("test22.xlsx");
+     excelAccess.writeExcelAsRb(pGrid,"NbTxViewRb.xlsx");
+     excelAccess.writeExcelAsRe(pGrid, "NbTxViewRe.xlsx");
+     //m_excelAccess.releaseExcel();
+}
+
+
+void CNRsystem_GUIDlg::OnBnClickedUeRxView()
+{
+    // TODO: Add your control notification handler code here
+}
+
 
 
 void CNRsystem_GUIDlg::OnBnClickedNrUeTx()
@@ -244,5 +277,8 @@ void CNRsystem_GUIDlg::OnBnClickedgNbRx()
 {
     // TODO: Add your control notification handler code here
 }
+
+
+
 
 

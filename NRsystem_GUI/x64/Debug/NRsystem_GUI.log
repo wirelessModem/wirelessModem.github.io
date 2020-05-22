@@ -1,10 +1,18 @@
-﻿  stdafx.cpp
-  SsbCfgDlg.cpp
-  NRsystem_GUIDlg.cpp
+﻿  NRsystem_GUIDlg.cpp
 f:\5g\5gnr\nrsimulator\nrsimulator\5gnr_modem_sdr\wirelessmodem.github.io\nrsystem_gui\gnbintf.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
 f:\5g\5gnr\nrsimulator\nrsimulator\5gnr_modem_sdr\wirelessmodem.github.io\nrsystem_gui\nrueintf.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
 f:\5g\5gnr\nrsimulator\nrsimulator\5gnr_modem_sdr\wirelessmodem.github.io\nrsystem_gui\nrbasicintf.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
   NRsystem_GUI.cpp
+  excel.cpp
+f:\5g\5gnr\nrsimulator\nrsimulator\5gnr_modem_sdr\wirelessmodem.github.io\nrsystem_gui\excel.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+f:\5g\5gnr\nrsimulator\nrsimulator\5gnr_modem_sdr\wirelessmodem.github.io\nrsystem_gui\excel.cpp(126): warning C4101: 'ch2': unreferenced local variable
+f:\5g\5gnr\nrsimulator\nrsimulator\5gnr_modem_sdr\wirelessmodem.github.io\nrsystem_gui\excel.cpp(127): warning C4101: 'ilen': unreferenced local variable
+f:\5g\5gnr\nrsimulator\nrsimulator\5gnr_modem_sdr\wirelessmodem.github.io\nrsystem_gui\excel.cpp(126): warning C4101: 'ch3': unreferenced local variable
+f:\5g\5gnr\nrsimulator\nrsimulator\5gnr_modem_sdr\wirelessmodem.github.io\nrsystem_gui\excel.cpp(126): warning C4101: 'ch1': unreferenced local variable
+  CnrUePrachCfgDlg.cpp
+  Generating Code...
+  Compiling...
+  SsbCfgDlg.cpp
   CoresetSSCfgDlg.cpp
   BwpCarrierCfgDlg.cpp
   Generating Code...

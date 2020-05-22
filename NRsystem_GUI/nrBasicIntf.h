@@ -29,6 +29,7 @@ extern char* getTraceInfoPtr();
 extern void resetTraceBuf();
 
 extern void gnrSysInit();
+extern int* getNbGridPtr();
 
 
 #ifdef __cplusplus

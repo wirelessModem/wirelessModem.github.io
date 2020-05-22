@@ -54,6 +54,12 @@ BOOL CNRsystem_GUIApp::InitInstance()
 
 	AfxEnableControlContainer();
 
+    //initial COM
+    if (CoInitialize(NULL) != 0)
+    {
+        AfxMessageBox(_T("initial COM failed"));
+        exit(1);
+    }
 	// Create the shell manager, in case the dialog contains
 	// any shell tree view or shell list view controls.
 	CShellManager *pShellManager = new CShellManager;
@@ -104,3 +110,12 @@ BOOL CNRsystem_GUIApp::InitInstance()
 	return FALSE;
 }
 
+
+
+int CNRsystem_GUIApp::ExitInstance()
+{
+    // TODO: Add your specialized code here and/or call the base class
+    CoUninitialize();//Uninitial COM
+
+    return CWinApp::ExitInstance();
+}

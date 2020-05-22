@@ -7,6 +7,10 @@
 #include "BwpCarrierCfgDlg.h"
 #include "CoresetSSCfgDlg.h"
 #include "SsbCfgDlg.h"
+#include "CnrUePrachCfgDlg.h"
+
+#include "excel.h"
+
 #include "afxwin.h"
 
 
@@ -41,6 +45,12 @@ public:
     afx_msg void OnBnClickedNrUeRx();
     afx_msg void OnBnClickedNrUeTx();
     afx_msg void OnBnClickedgNbRx();
+
+    afx_msg void OnTcnSelchangeTabGnb(NMHDR *pNMHDR, LRESULT *pResult);
+    afx_msg void OnBnClickedNbTxView();
+    afx_msg void OnBnClickedUeRxView();
+
+
     CTabCtrl m_tab;
 
     int m_CurSelTab;
@@ -49,7 +59,13 @@ public:
     CSsbCfgDlg        m_ssbCfg;
     CDialogEx        *p_Dlg[4];
 
-    afx_msg void OnTcnSelchangeTabGnb(NMHDR *pNMHDR, LRESULT *pResult);
+    CnrUePrachCfgDlg  m_nrUePrachCfg;
+
+
+
+    
     CTabCtrl m_ueTab;
     CEdit m_NrStatusTxt;
+    
+    //CexcelAccess m_excelAccess;
 };

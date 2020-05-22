@@ -27,6 +27,7 @@ public:
 // Implementation
 
 	DECLARE_MESSAGE_MAP()
+    virtual int ExitInstance();
 };
 
 extern CNRsystem_GUIApp theApp;

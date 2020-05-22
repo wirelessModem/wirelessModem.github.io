@@ -229,7 +229,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BwpCarrierCfgDlg.h" />
+    <ClInclude Include="CApplication.h" />
+    <ClInclude Include="CBorders.h" />
+    <ClInclude Include="CFont0.h" />
+    <ClInclude Include="CnrUePrachCfgDlg.h" />
+    <ClInclude Include="Cnterior.h" />
     <ClInclude Include="CoresetSSCfgDlg.h" />
+    <ClInclude Include="CRange.h" />
+    <ClInclude Include="CWorkbook.h" />
+    <ClInclude Include="CWorkbooks.h" />
+    <ClInclude Include="CWorksheet.h" />
+    <ClInclude Include="CWorksheets.h" />
+    <ClInclude Include="excel.h" />
     <ClInclude Include="gNbIntf.h" />
     <ClInclude Include="nrBasicIntf.h" />
     <ClInclude Include="NRsystem_GUI.h" />
@@ -242,7 +253,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BwpCarrierCfgDlg.cpp" />
+    <ClCompile Include="CnrUePrachCfgDlg.cpp" />
     <ClCompile Include="CoresetSSCfgDlg.cpp" />
+    <ClCompile Include="excel.cpp" />
     <ClCompile Include="NRsystem_GUI.cpp" />
     <ClCompile Include="NRsystem_GUIDlg.cpp" />
     <ClCompile Include="SsbCfgDlg.cpp" />
